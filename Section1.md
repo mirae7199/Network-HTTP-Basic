@@ -49,3 +49,22 @@
 </ul>
 
 <h3>TCP/IP 패킷 정보</h3>
+IP 패킷 [출발지 IP, 목적지 IP, 기타...] <br>
+TCP 세그먼트 [출발지 PORT, 목적지 PORT, 전송 제어, 순서, 검증 정보...]<br><br>
+
+[애플리케이션 계층]게임 채팅 프로그램이 Hello, world! 메시지 생성 (socket 라이브러리를 통해 os 계층으로 전달) -><br>[OS 계층]TCP 정보 생성, 메시지 데이터 포함 -> IP 패킷 생성, TCP 데이터 포함 -><br>[네트워크 인터페이스 계층]LAN 드라이버 LAN 장비 -> Ethernet Frame에 씌어져서 나감
+
+<h3>TCP 특징</h3>
+전송 제어 프로토콜(Transmission Control Protocal)
+
+<ul>
+  <li>
+    연결지향 - TCP 3 way handShake (가상 연결)
+  </li>
+  <li>
+    데이터 전달 보증
+  </li>
+  <li>
+    순서 보장
+  </li>
+</ul>
